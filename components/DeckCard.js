@@ -82,8 +82,9 @@ const styles = StyleSheet.create({
     marginTop: 8,
     marginBottom: 8,
     padding: 16,
-    borderRadius: 10,
-    backgroundColor: bgGreen
+    borderBottomLeftRadius:20,
+    borderTopRightRadius:20,
+    backgroundColor: "#e93766"
   },
   contentContainer: {
     flex: 1

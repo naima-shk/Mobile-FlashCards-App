@@ -1,5 +1,6 @@
 import React from 'react';
-import { createStackNavigator, createAppContainer } from 'react-navigation';
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack'
 
 import TabNavigation from './TabNavigation';
 import Decks from '../views/Decks';
@@ -12,7 +13,7 @@ const StackNavigator = createStackNavigator({
   Primary: {
     screen: TabNavigation,
     navigationOptions: {
-      header: null
+      headerShown: false
     }
   },
   Decks: {

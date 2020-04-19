@@ -19,7 +19,7 @@ const globalStyles = StyleSheet.create({
     marginTop: 32,
     height: 50,
     borderRadius: 10,
-    backgroundColor: bgBlue
+    backgroundColor:"green"
   },
   btnSecondary: {
     justifyContent: 'center',
@@ -28,16 +28,18 @@ const globalStyles = StyleSheet.create({
     height: 50,
     borderColor: bgBlue,
     borderWidth: 1,
-    borderRadius: 10
+    borderRadius: 10,
+    backgroundColor:"#515af5"
   },
   btnPrimaryText: {
     color: white,
     fontSize: 14,
     fontFamily: robotoMedium,
-    textTransform: 'uppercase'
+    textTransform: 'uppercase',
+    
   },
   btnSecondaryText: {
-    color: bgBlue,
+    color: "white",
     fontSize: 14,
     fontFamily: robotoMedium,
     textTransform: 'uppercase'

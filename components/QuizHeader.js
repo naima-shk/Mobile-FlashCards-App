@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
     paddingRight: 16,
     height: 130,
     borderRadius: 10,
-    backgroundColor: bgBlueLight
+    backgroundColor: '#f551b9'
   },
   headerTextContainer: {
     flex: 1,

@@ -36,13 +36,13 @@ const TabNavigator = createBottomTabNavigator(
   },
   {
     navigationOptions: {
-      header: null,
+      headerShown: false,
     },
     tabBarOptions: {
       activeTintColor: Platform.OS === "ios" ? bgBlue : white,
       style: {
         height: 56,
-        backgroundColor: Platform.OS === "ios" ? "#FAFAFA" : bgBlue,
+        backgroundColor: Platform.OS === "ios" ? "#FAFAFA" : "black",
         fontFamily: robotoRegular,
         shadowColor: "rgba(0,0,0,0.24)",
         shadowOffset: {

@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     marginTop: 8,
     height: 130,
     borderRadius: 10,
-    backgroundColor: bgBlueLight
+    backgroundColor: "#6ee0f7"
   },
   headerTextContainer: {
     flexDirection: 'column' // Swap from row back to the default of column
