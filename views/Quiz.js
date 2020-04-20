@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { View } from 'react-native';
+import { View, ScrollView } from 'react-native';
 import globalStyles from '../utils/globalStyles';
 import { clearLocalNotification, setLocalNotification } from '../utils/notificationHelper';
 
@@ -20,20 +20,20 @@ class Quiz extends Component {
   handleQuestionAnswered = async (answeredCorrectly) => {
 
     if (answeredCorrectly) {
-      this.setState({answeredCorrectly: this.state.answeredCorrectly + 1});
+      this.setState({ answeredCorrectly: this.state.answeredCorrectly + 1 });
     }
 
     const isQuizComplete = this.state.currentQuestionIndex === this.props.questions.length - 1;
 
     if (isQuizComplete) {
 
-      this.setState({quizComplete: true});
+      this.setState({ quizComplete: true });
 
       await clearLocalNotification();
       await setLocalNotification();
 
     } else {
-      this.setState({currentQuestionIndex: this.state.currentQuestionIndex + 1});
+      this.setState({ currentQuestionIndex: this.state.currentQuestionIndex + 1 });
     }
   };
 
@@ -52,7 +52,7 @@ class Quiz extends Component {
     const currentQuestionObject = questions[currentQuestionIndex];
 
     return (
-      <View style={{flex: 1}}>
+      <ScrollView style={{ flex: 1 }}>
 
         <CustomStatusBar />
 
@@ -64,24 +64,29 @@ class Quiz extends Component {
 
           {quizComplete
             ? <QuizResults
-                questionsAnsweredCorrectly={answeredCorrectly}
-                totalQuestions={questions.length}
-                onStartQuizAgain={this.handleStartQuizAgain}
+              questionsAnsweredCorrectly={answeredCorrectly}
+              totalQuestions={questions.length}
+              onStartQuizAgain={this.handleStartQuizAgain}
 
-              />
+            />
             : <Question
-                questionObject={currentQuestionObject}
-                onQuestionAnswered={this.handleQuestionAnswered}
-              />}
+              questionObject={currentQuestionObject}
+              onQuestionAnswered={this.handleQuestionAnswered}
+            />}
 
         </View>
 
-      </View>
+      </ScrollView>
     );
   }
 }
 
 function mapStateToProps(decks, { navigation }) {
+
+
+  console.log(navigation.state.params);
+
+
   const { deckId } = navigation.state.params;
 
   return {

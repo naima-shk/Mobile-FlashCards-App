@@ -14,7 +14,9 @@ export async function fetchAllDecks() {
   // Get all the decks from AsyncStorage. If there aren't any then use the dummy data
   // as the default set of decks.
   let decksJson = await AsyncStorage.getItem(DECKS_STORAGE_KEY);
+
   AsyncStorage.clear();
+
   if (decksJson !== null) {
     return JSON.parse(decksJson);
   } else {
@@ -27,6 +29,7 @@ export async function fetchAllDecks() {
 
 const dummyData = {
   React: {
+    id: "React",
     title: "React",
     questions: [
       {
@@ -45,6 +48,7 @@ const dummyData = {
     ],
   },
   JavaScript: {
+    id: "JavaScript",
     title: "JavaScript",
     questions: [
       {
