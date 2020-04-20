@@ -6,7 +6,7 @@ This is the Third project of Udacity nano degree. You could manage decks and car
 
 You can clone the App using the below link.
 
-`git@github.com:naima-shk/Book-Tracking-App.git`
+`git@github.com:naima-shk/Mobile-FlashCards-App.git`
 
 In the project directory, you can run:
 
