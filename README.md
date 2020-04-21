@@ -4,6 +4,8 @@ This is the Third project of Udacity nano degree. You could manage decks and car
 
 # How to Run the Project Locally
 
+use `Expo-cli` to run the app.
+
 You can clone the App using the below link.
 
 `git@github.com:naima-shk/Mobile-FlashCards-App.git`
@@ -25,5 +27,3 @@ The App has been tested on the Android device only.
 ![](images/deck1.png)
 ![](images/deck2.png)
 ![](images/deck3.png)
-
-use `Expo-cli` to run the app on an IOS or android simulator.
