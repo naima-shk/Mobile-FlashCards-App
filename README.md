@@ -18,7 +18,7 @@ then run
 
 # Device Testing
 
-The App has been tested on the Android device only as I don't have a Mac-OS.
+The App has been tested on the Android device only.
 
 # Screenshots
 
@@ -26,4 +26,4 @@ The App has been tested on the Android device only as I don't have a Mac-OS.
 ![](images/deck2.png)
 ![](images/deck3.png)
 
-use `Expo` to run the app on an IOS or android simulator.
+use `Expo-cli` to run the app on an IOS or android simulator.
