@@ -22,8 +22,8 @@ The App has been tested on the Android device only as I don't have a Mac-OS.
 
 # Screenshots
 
-![](images/deck1.PNG)
-![](images/deck2.PNG)
-![](images/deck3.PNG)
+![](images/deck1.png)
+![](images/deck2.png)
+![](images/deck3.png)
 
 use `Expo` to run the app on an IOS or android simulator.
