@@ -15,7 +15,7 @@ export async function fetchAllDecks() {
   // as the default set of decks.
   let decksJson = await AsyncStorage.getItem(DECKS_STORAGE_KEY);
 
-  AsyncStorage.clear();
+  // AsyncStorage.clear();
 
   if (decksJson !== null) {
     return JSON.parse(decksJson);
