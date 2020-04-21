@@ -2,7 +2,7 @@
 
 This is the Third project of Udacity nano degree. You could manage decks and cards in it to answer questions at any time with your phone.
 
-# How to Run the Project Locally
+# How To Run the Project Locally
 
 use `Expo-cli` to run the app.
 
