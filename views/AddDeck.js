@@ -6,6 +6,7 @@ import { textColor } from '../utils/colors';
 import { robotoMedium } from '../utils/fonts';
 import CustomStatusBar from '../components/CustomStatusBar';
 import { addDeck } from '../actions';
+import NavigationService from '../navigation/navigationService'
 
 class AddDeck extends Component {
 
@@ -48,7 +49,11 @@ class AddDeck extends Component {
     }
 
     addDeck(title);
-    goToDecks();
+    //goToDecks();
+    
+    NavigationService.navigate("Deck", {
+      deckId: this.state.title,
+    });
 
     this.resetState();
   };
